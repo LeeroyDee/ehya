@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ehya - магазин книг</title>
+  <title>Ehya - книжный магазин</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -28,35 +28,47 @@
   <div class="container">
     <header class="header">
       <div class="header__top">
-        <a href="index.html" class="header__logo">
-          <img src="/img/header/logo.png" alt="logo: Ehya- книжный магазин " class="logo__image">
+        <a href="index.html" class="header-logo">
+          <img src="/img/header/logo.png" alt="logo: Ehya- книжный магазин " class="header-logo__image">
         </a>
-        <div class="header__left">
-          <ul class="header__menu">
-            <li class="menu__link">Рекомендации</li>
-            <li class="menu__link">Книги</li>
-            <li class="menu__link">Блог</li>
+        <nav id="menu" class="header__left header__left--none">
+          <ul class="header-menu ">
+            <li class="header-menu__link">Рекомендации</li>
+            <li class="header-menu__link">Книги</li>
+            <li class="header-menu__link">Блог</li>
           </ul>
           <button class="header__button">Получить</button>
-        </div>
+        </nav>
+        <button id="trigger" class="header__burger header__burger--none">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </div>
       <div class="header__bottom">
         <div class="main">
-          <h1 class="main__title"><span class="main__title--yellow">Design Theory:</span><br>
+          <h1 class="main__title"><span class="main__title main__title--yellow">Design Theory:</span><br>
             The Psychology of<br>
             Graphic Design Pricing
           </h1>
           <span class="main__author">КНИГА МИШЕЛЯ ЯНГА</span>
           <p class="main__description">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для
-            крупных клиентов. Теперь я делюсь своими
-            золотыми стратегиями ценообразования на творческую работу.
+            крупных клиентов. Теперь я делюсь своими <br>золотыми стратегиями ценообразования на творческую работу.
           </p>
-          
+          <div class="main__wrapper-button">
+            <button class="main__button">КУПИТЬ СЕЙЧАС</button>
+            <a class="main__link-book " href="#">ЧИТАТЬ ДЕМО</a>
+          </div>
+        </div>
+        <div class="main-book">
+          <img class="main-book__image" src="./img/header/book.jpg" alt="image: book">
         </div>
       </div>
     </header>
     <!-- /.header -->
 
+  </div>
+  <!-- /.container -->
 
   <script src="js/main.js"></script>
 </body>
