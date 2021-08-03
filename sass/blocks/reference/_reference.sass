@@ -1,5 +1,159 @@
 .reference
   margin-top: 100px
-  &-slider
-    width: 600px;
-    height: 300px;
+  padding-bottom: 79px
+  border-bottom: 1px solid #ECEEF2
+
+
+  &__title
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+  &__cards
+    padding: 30px 0 27px 0
+    width: 751px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 
+    gap: 32px 32px
+  &__button
+    width: 751px
+    height: 72px
+    background: rgba(21, 101, 216,.1)
+    mix-blend-mode: normal;
+    border-radius: 8px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #1565D8;
+    cursor: pointer
+.top
+  &-wrapper
+    padding-top: 24px
+    height: 942px
+    margin-top: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 360px
+    background: rgba(179, 186, 197, 0.1);
+    mix-blend-mode: normal;
+    border-radius: 8px;
+  &__line
+    display: flex
+    justify-content: center
+    width: 312px
+    height: 1px
+    border: 1px solid #ECEEF2;
+  &-link
+    justify-content: center
+    display: flex
+    margin-top: 25px
+    margin-bottom: 25px
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #1565D8;
+    text-decoration: none
+    text-align: center
+
+.card
+  display: flex
+  align-items: center
+  width: 358px
+  height: 260px
+  padding: 11px
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  &--min
+    width: 100%
+    height: 180px
+    border: none
+    border-radius: 0
+    padding: 0
+    margin-bottom: 30px
+  &__image
+    width: 160px
+    height: 240px
+    margin-right: 20px
+    background: #B3BAC5;
+    mix-blend-mode: normal;
+    border-radius: 8px;
+    &--min
+      width: 120px
+      height: 180px
+      margin-left: 26px
+  &__description
+    display: flex
+    flex-direction: column
+  &__title
+    margin-top: 13px
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+  &__genre
+    margin-top: 16px
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #183B56;
+    &--min
+      display: none
+  &__price
+    margin-top: 24px
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;  
+    color: #1565D8;
+    &--min
+      margin-top: 15px
+  &__group
+    display: flex
+    align-items: center
+    margin-top: 24px
+    &--min
+      margin-top: 29px
+  &__button
+    display: flex
+    width: 101px
+    height: 38px
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 20px 7px 20px
+    background: #183B56;
+    border-radius: 2000px;
+    border: none
+
+  &__heart
+    display: flex
+    margin-left: 22px
+    width: 20px
+    height: 21px
+    background-image: url(../img/reference/slider/heart.svg)
+    background-repeat: no-repeat
+    cursor: pointer  
+    &--min
+      display: none
