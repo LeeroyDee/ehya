@@ -21,6 +21,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <!-- add style -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -66,10 +67,36 @@
       </div>
     </header>
     <!-- /.header -->
-
+    <div class="reference">
+      <div class="reference__main">
+        <h2 class="reference__title">Рекомендации</h2>
+        <div class="reference__cards"></div>
+        <button class="reference__button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button>
+      </div>
+      <div class="reference__top">
+        <div class="reference__title">Топ Месяца</div>
+        <div class="top-wrapper">
+          <a class="top-link" href="#">ЛУЧШИЕ КНИГИ</a>
+        </div>
+      </div>
+      <span class="reference__line"></span>
+      <div class="reference-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- /.reference -->
   </div>
   <!-- /.container -->
-
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
