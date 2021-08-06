@@ -16,15 +16,32 @@ function open() {
 // })
 
 
-const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  //spaceBetween: 3,
+const swiper = new Swiper('.reference-slider', {
+  slidesPerView: 4,
+  watchOverflow: true ,
+  //spaceBetween: 6,
   direction: 'horizontal',
   loop: false,
 
   // Navigation arrows
   navigation: {
+    nextEl: '.slider-button--next',
+    prevEl: '.slider-button--prev',
+  },
+});
+swiper.update();
+const sliderBook = new Swiper('.book', {
+  slidesPerView: 5,
+  watchOverflow: true ,
+  //spaceBetween: 6,
+  direction: 'horizontal',
+  loop: false,
+  
+  // Navigation arrows
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+
 });

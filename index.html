@@ -26,7 +26,6 @@
 </head>
 
 <body>
-  <div class="container">
     <header class="header">
       <div class="header__top">
         <a href="index.html" class="header-logo">
@@ -68,7 +67,6 @@
     </header>
     <!-- /.header -->
     <section class="reference">
-      <div class="flex">
         <div class="reference__main">
           <h2 class="reference__title">Рекомендации</h2>
           <div class="reference__cards">
@@ -208,18 +206,19 @@
                 </div>
               </div>
             </div>
-            <span class="top__line"></span>
+            <span class="top-line"></span>
             <a class="top-link" href="#">ЛУЧШИЕ КНИГИ</a>
           </div>
         </div>
-      </div>
     </section>
     <!-- /.reference -->
     <section class="slider">
+      <div class="slider-button slider-button--prev"></div>
+      <div class="slider-button slider-button--next"></div>
       <div class="reference-slider swiper-container">
-        <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class=" swiper-slide">
                 <div class="slider__card">
                   <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
                   <h3 class="slider__title">Бизнес & Финансы</h3>
@@ -248,28 +247,104 @@
                   </span>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slider__card">
-                <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                <h3 class="slider__title">Бизнес & Финансы</h3>
-                <span class="slider__description">Книги про мир бизнеса</span>
+              <div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+                  <h3 class="slider__title">Бизнес & Финансы</h3>
+                  <span class="slider__description">Книги про мир бизнеса</span>
+                </div>
+              </div>  
+              <div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+                  <h3 class="slider__title">Бизнес & Финансы</h3>
+                  <span class="slider__description">Книги про мир бизнеса</span>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+                  <h3 class="slider__title">Бизнес & Финансы</h3>
+                  <span class="slider__description">Книги про мир бизнеса</span>
+                </div>
+              </div>  
+              <div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+                  <h3 class="slider__title">Бизнес & Финансы</h3>
+                  <span class="slider__description">Книги про мир бизнеса</span>
+                </div>
+              </div>   
             </div>
-            <div class="swiper-slide">
-              <div class="slider__card">
-                <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                <h3 class="slider__title">Бизнес & Финансы</h3>
-                <span class="slider__description">Книги про мир бизнеса</span>
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
+      </div>
     </section>
-  </div>
-  <!-- /.container -->
+    <section class="slider-book ">
+      <div class="container book swiper-container">
+        <h2 class="slider-book__title">Неизданные книги</h2>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/ImageLogo.png" alt="image" ></div>
+          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/kelly.png" alt="image" ></div>
+          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/making.png" alt="image" ></div>
+          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/web.png" alt="image" ></div>
+          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/after.png" alt="image" ></div>
+
+          
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="history">
+      <div class="container history__grid">
+          <h2 class="history__title">История Автора</h2>
+          <p class="history__description">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем 
+            о закулисье их книг.
+          </p>
+          <div class="history__video history__video--big">
+            <img src="/img/history/women.jpg" alt="icon: women" class="history__image history__image--big">
+            <button class="history__button history__button--big">
+              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+            </button>
+          </div>
+          <div class="history__video history__video--1">
+            <img src="/img/history/emelda.png" alt="image: emelda" class="history__image">
+            <button class="history__button">
+              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+            </button>
+            <h3 class="video__title">Emelda Scandroot</h3>
+            <span class="video__job">Author of Books Tittle</span>
+          </div>
+          <div class="history__video history__video--2">
+            <img src="/img/history/mar.png" alt="image: mar" class="history__image">
+            <button class="history__button">
+              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+            </button>
+            <h3 class="history__name">Emelda Scandroot</h3>
+            <span class="history__job">Author of Books Tittle</span>
+          </div>
+          <div class="history__video history__video--3">
+            <img src="/img/history/nembo.png" alt="image: nembo" class="history__image">
+            <button class="history__button">
+              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+            </button>
+            <h3 class="history__name">Emelda Scandroot</h3>
+            <span class="history__job">Author of Books Tittle</span>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <section class="publishers">
+    </section>
+    <section class="ehya-blog">
+    </section>
+    <section class="sibscribe">
+
+    </section>
+    <footer class="footer">
+    </footer>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

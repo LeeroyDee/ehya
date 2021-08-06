@@ -1,0 +1,68 @@
+.history
+  padding: 104px 0 100px 0
+  &__grid
+    display: grid
+    grid-template-areas: "a b b" "f f f" "c d e"
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 315px 315px 315px;
+    grid-gap: 10px;
+    height: 100vh;
+  &__title
+    grid-area: a
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #183B56;
+    letter-spacing: 0.2px;
+  &__descrition
+    grid-area: b
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5A7184;
+  &__video
+    &--big
+      grid-area: f
+    &--1
+      grid-area: c
+    &--2
+      grid-area: d
+    &--3
+      grid-area: e
+  &__image
+    position: relative
+    width: 325px
+    height: 200px
+    &--big
+      width: 1005px
+      height: 380px
+  &__button
+    position: absolute
+    z-index: 30
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    &--big
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background: white
+  &__name  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+  &__job
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A7184;
+
+
