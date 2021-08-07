@@ -37,7 +37,7 @@
           <li class="header-menu__link">Книги</li>
           <li class="header-menu__link">Блог</li>
         </ul>
-        <button class="header__button">Получить</button>
+        <button data-toggle="modal" class="header__button">Получить</button>
       </nav>
       <button id="trigger" class="header__burger header__burger--none">
         <span class="line"></span>
@@ -56,8 +56,8 @@
           крупных клиентов. Теперь я делюсь своими <br>золотыми стратегиями ценообразования на творческую работу.
         </p>
         <div class="main__wrapper-button">
-          <button class="main__button">КУПИТЬ СЕЙЧАС</button>
-          <a class="main__link-book " href="#">ЧИТАТЬ ДЕМО</a>
+          <button data-toggle="modal" class="main__button">КУПИТЬ СЕЙЧАС</button>
+          <a class="main__link-book" href="#">ЧИТАТЬ ДЕМО</a>
         </div>
       </div>
       <div class="main-book">
@@ -79,7 +79,7 @@
               <div class="card__genre">Art & Design</div>
               <div class="card__price">$25.00</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -97,7 +97,7 @@
               <div class="card__genre">Education</div>
               <div class="card__price">$28.00</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -115,7 +115,7 @@
               <div class="card__genre">Novel</div>
               <div class="card__price">$19.50</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -133,7 +133,7 @@
               <div class="card__genre">Novel</div>
               <div class="card__price">$20.00</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -151,7 +151,7 @@
               <div class="card__genre">Business</div>
               <div class="card__price">$23.00</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -169,7 +169,7 @@
               <div class="card__genre">Motivation</div>
               <div class="card__price">$23.00</div>
               <div class="card__group">
-                <button class="card__button">Купить</button>
+                <button data-toggle="modal" class="card__button">Купить</button>
                 <div class="card__heart">
                   <svg class="heart" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -193,7 +193,7 @@
               <div class="card__genre card__genre--min">Art & Design</div>
               <div class="card__price card__price--min">$23.00</div>
               <div class="card__group card__group--min">
-                <button class="card__button card__button--min">Купить</button>
+                <button data-toggle="modal" class="card__button card__button--min">Купить</button>
                 <class class="card__heart card__heart--min" id="heart"></class>
               </div>
             </div>
@@ -206,7 +206,7 @@
               <div class="card__genre card__genre--min">Art & Design</div>
               <div class="card__price card__price--min">$23.00</div>
               <div class="card__group card__group--min">
-                <button class="card__button card__button--min">Купить</button>
+                <button data-toggle="modal" class="card__button card__button--min">Купить</button>
                 <div class="card__heart card__heart--min" id="heart"></div>
               </div>
             </div>
@@ -219,7 +219,7 @@
               <div class="card__genre card__genre--min">Art & Design</div>
               <div class="card__price card__price--min">$23.00</div>
               <div class="card__group card__group--min">
-                <button class="card__button card__button--min">Купить</button>
+                <button data-toggle="modal" class="card__button card__button--min">Купить</button>
                 <div class="card__heart card__heart--min" id="heart"></div>
               </div>
             </div>
@@ -232,7 +232,7 @@
               <div class="card__genre card__genre--min">Art & Design</div>
               <div class="card__price card__price--min">$23.00</div>
               <div class="card__group card__group--min">
-                <button class="card__button card__button--min">Купить</button>
+                <button data-toggle="modal" class="card__button card__button--min">Купить</button>
                 <div class="card__heart card__heart--min" id="heart"></div>
               </div>
             </div>
@@ -343,7 +343,7 @@
       писателя. Расскажем всем
       о&nbsp;закулисье их книг.
     </p>
-    <div class="history__video history__video--big">
+    <div class="history__video history__video--big" id="player0">
       <img src="/img/history/women.jpg" alt="icon: women" class="history__image history__image--big">
 
       <button class="history__button history__button--big">
@@ -351,7 +351,7 @@
       </button>
     </div>
     <div class="history__video history__video--1">
-      <div class="history__wrapper">
+      <div class="history__wrapper" id="player1">
         <img src="/img/history/emelda.png" alt="image: emelda" class="history__image">
         <button class="history__button">
           <img src="/img/history/playWhite.svg" alt="icon: play" class="history__play">
@@ -361,7 +361,7 @@
       <span class="history__job">Author of Books Tittle</span>
     </div>
     <div class="history__video history__video--2">
-      <div class="history__wrapper">
+      <div class="history__wrapper" id="player2">
         <img src="/img/history/mar.png" alt="image: mar" class="history__image">
         <button class="history__button">
           <img src="/img/history/playWhite.svg" alt="icon: play" class="history__play">
@@ -371,7 +371,7 @@
       <span class="history__job">Author of Books Tittle</span>
     </div>
     <div class="history__video history__video--3">
-      <div class="history__wrapper">
+      <div class="history__wrapper" id="player3">
         <img src="/img/history/nembo.png" alt="image: nembo" class="history__image">
         <button class="history__button">
           <img src="/img/history/playWhite.svg" alt="icon: play" class="history__play">
@@ -563,20 +563,20 @@
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="icon: close">
+        <img src="img/modal/close.svg" alt="icon: close">
       </a>
       <div class="modal__wrapper">
-        <h3 class="modal__title">Booking</h3>
+        <h3 class="modal__title">Заказ</h3>
         <form action="send.php" method="POST" class="modal__form">
-          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" required
+          <input name="name" type="text" class="input modal__input" placeholder="ваше имя*" required
             minlength="2">
-          <input name="phone" type="tel" class="input  phone modal__input" placeholder="Phone Number*" required
+          <input name="phone" type="tel" class="input  phone modal__input" placeholder="мобильный телефон*" required
             minlength="16">
-          <input name="email" type="email" class="input modal__input" placeholder="Email*" required>
-          <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
+          <input name="email" type="email" class="input modal__input" placeholder="почта*" required>
+          <textarea name="message" class="message modal__message" placeholder="сообщение"></textarea>
           <div class="modal__bottom">
             <button class="button modal__button" type="submit">Send</button>
-            <span class="modal__info">* Required Fields</span>
+            <span class="modal__info">* обязательные поля</span>
           </div>
         </form>
       </div>
