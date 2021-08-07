@@ -2,9 +2,9 @@
   padding: 108px 0 100px 0
 
   display: grid
-  grid-template-areas: "left a b c d" "cop cop cop cop cop"
-  grid-template-rows: 200px 150px
-  grid-template-columns: 273px 164px 260px 238px 1fr
+  grid-template-areas: "left b a c d" "cop cop cop cop cop"
+  grid-template-rows: 262px 198px
+  grid-template-columns: 262px 195px 196px 195px 1fr
   height: 668px
   &__left
     grid-area: left
@@ -13,10 +13,10 @@
     align-items: start
   &__logo
     width: 90px
-    height: 25px
-    margin-bottom: 28px
+    height: 28px
+    margin-bottom: 25px
   &__ad
-    margin-bottom: 32px
+    margin-bottom: 30px
     width: 263px
     font-style: normal
     font-weight: normal
@@ -26,13 +26,8 @@
   &__social
     display: flex
   &__link
+    transition: 1s all
     text-decoration: none
-    &--g
-      margin-right: 6px
-    &--tw
-      margin-right: 7px
-    &--ins
-      margin-right: 8px
     &--c
       display: flex
       align-items: center
@@ -41,9 +36,21 @@
       height: 40px
       background-color: rgba(90, 113, 132, .1)
       border-radius: 2000px
+    &--g
+      width: 42px
+      margin-right: 6px
+    &--tw
+      width: 42px
+      margin-right: 7px
+    &--ins
+      margin-right: 8px
+
   &__image
     width: 16px
     height: 18px
+    &--min
+      width: 15px
+      height: 17px
   &__column
     margin-left: 30px
     &--1
@@ -86,8 +93,9 @@
     border-radius: 50%
     background: #1576D8 url("../img/footer/heart.svg") no-repeat center center
   &__link
-
+    text-decoration: none
   &__text
+    transition: 1s all
     font-weight: 600
     font-size: 16px
     line-height: 22px
