@@ -77,3 +77,38 @@ function send(event, php) {
   };
   req.send(new FormData(event.target));
 }
+//modal open close
+function b() {
+  var g = $(".modal__overlay");
+  var h = $(".modal__dialog");
+  g.addClass("modal__overlay--visible");
+  h.addClass("modal__dialog--visible");
+}
+function d(i) {
+  i.preventDefault();
+  var g = $(".modal__overlay");
+  var h = $(".modal__dialog");
+  g.removeClass("modal__overlay--visible");
+  h.removeClass("modal__dialog--visible");
+}
+$("form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Name must be at least 2 letters",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Enter your phone number",
+        phone: "Your phone must be in the format of +7 (999) 999-99-99",
+        minlength: "Phone must be at least 11 letters",
+      },
+    },
+  });
+});
+$(".phone").mask("+7(999) 99-99-99");

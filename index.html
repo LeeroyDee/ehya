@@ -558,6 +558,31 @@
 
 
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+      <div class="modal__wrapper">
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" required
+            minlength="2">
+          <input name="phone" type="tel" class="input  phone modal__input" placeholder="Phone Number*" required
+            minlength="16">
+          <input name="email" type="email" class="input modal__input" placeholder="Email*" required>
+          <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
+          <div class="modal__bottom">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /.model__dialog -->
+  </div>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
