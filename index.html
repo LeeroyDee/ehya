@@ -26,325 +26,490 @@
 </head>
 
 <body>
-    <header class="header">
-      <div class="header__top">
-        <a href="index.html" class="header-logo">
-          <img src="/img/header/logo.png" alt="logo: Ehya- книжный магазин " class="header-logo__image">
-        </a>
-        <nav id="menu" class="header__left header__left--none">
-          <ul class="header-menu ">
-            <li class="header-menu__link">Рекомендации</li>
-            <li class="header-menu__link">Книги</li>
-            <li class="header-menu__link">Блог</li>
-          </ul>
-          <button class="header__button">Получить</button>
-        </nav>
-        <button id="trigger" class="header__burger header__burger--none">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+  <header class="header">
+    <div class="header__top">
+      <a href="index.html" class="header-logo">
+        <img src="/img/header/logo.png" alt="logo: Ehya- книжный магазин " class="header-logo__image">
+      </a>
+      <nav id="menu" class="header__left header__left--none">
+        <ul class="header-menu ">
+          <li class="header-menu__link">Рекомендации</li>
+          <li class="header-menu__link">Книги</li>
+          <li class="header-menu__link">Блог</li>
+        </ul>
+        <button class="header__button">Получить</button>
+      </nav>
+      <button id="trigger" class="header__burger header__burger--none">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+    <div class="header__bottom">
+      <div class="main">
+        <h1 class="main__title"><span class="main__title main__title--yellow">Design Theory:</span><br>
+          The Psychology of<br>
+          Graphic Design Pricing
+        </h1>
+        <span class="main__author">КНИГА МИШЕЛЯ ЯНГА</span>
+        <p class="main__description">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для
+          крупных клиентов. Теперь я делюсь своими <br>золотыми стратегиями ценообразования на творческую работу.
+        </p>
+        <div class="main__wrapper-button">
+          <button class="main__button">КУПИТЬ СЕЙЧАС</button>
+          <a class="main__link-book " href="#">ЧИТАТЬ ДЕМО</a>
+        </div>
+      </div>
+      <div class="main-book">
+        <img class="main-book__image" src="./img/header/book.jpg" alt="image: book">
+      </div>
+    </div>
+  </header>
+  <!-- /.header -->
+  <section class="reference">
+    <div class="reference__main">
+      <h2 class="reference__title">Рекомендации</h2>
+      <div class="reference__cards">
+        <div class="card">
+          <img src="/img/reference/world.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">The World of
+              Abstract Art</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/reference/educated.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">Educated :
+              a Memoir</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/reference/flowers.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">The Blue
+              Flowers Ray…</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/reference/there.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">There There :
+              a Novel by TO</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/reference/work.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">WMNDFL :
+              The Inspiration</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/reference/making.png" alt="image: book" class="card__image">
+          <div class="card__description">
+            <h3 class="card__title">Making
+              Things Happen</h3>
+            <div class="card__genre">Art & Design</div>
+            <div class="card__price">$25.00</div>
+            <div class="card__group">
+              <button class="card__button">Купить</button>
+              <div class="card__heart" id="heart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="reference__button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button>
+    </div>
+    <div class="reference__top">
+      <div class="reference__title">Топ Месяца</div>
+      <div class="top-wrapper">
+        <div class="card card--min">
+          <img src="/img/reference/sprint.png" alt="image: book" class="card__image card__image--min">
+          <div class="card__description card__description--min">
+            <h3 class="card__title card__title--min">Sprint : Solve,
+              Test in 5 Days</h3>
+            <div class="card__genre card__genre--min">Art & Design</div>
+            <div class="card__price card__price--min">$25.00</div>
+            <div class="card__group card__group--min">
+              <button class="card__button card__button--min">Купить</button>
+              <div class="card__heart card__heart--min" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--min">
+          <img src="/img/reference/hacking.png" alt="image: book" class="card__image card__image--min">
+          <div class="card__description card__description--min">
+            <h3 class="card__title card__title--min">Hacking Growth
+              Break Problem</h3>
+            <div class="card__genre card__genre--min">Art & Design</div>
+            <div class="card__price card__price--min">$25.00</div>
+            <div class="card__group card__group--min">
+              <button class="card__button card__button--min">Купить</button>
+              <div class="card__heart card__heart--min" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--min">
+          <img src="/img/reference/very.png" alt="image: book" class="card__image card__image--min">
+          <div class="card__description card__description--min">
+            <h3 class="card__title card__title--min">Very Nice a
+              Novel by Mercy</h3>
+            <div class="card__genre card__genre--min">Art & Design</div>
+            <div class="card__price card__price--min">$25.00</div>
+            <div class="card__group card__group--min">
+              <button class="card__button card__button--min">Купить</button>
+              <div class="card__heart card__heart--min" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--min">
+          <img src="/img/reference/hooked.png" alt="image: book" class="card__image card__image--min">
+          <div class="card__description card__description--min">
+            <h3 class="card__title card__title--min">Hooked : How to
+              Build Products</h3>
+            <div class="card__genre card__genre--min">Art & Design</div>
+            <div class="card__price card__price--min">$25.00</div>
+            <div class="card__group card__group--min">
+              <button class="card__button card__button--min">Купить</button>
+              <div class="card__heart card__heart--min" id="heart"></div>
+            </div>
+          </div>
+        </div>
+        <span class="top-line"></span>
+        <a class="top-link" href="#">ЛУЧШИЕ КНИГИ</a>
+      </div>
+    </div>
+  </section>
+  <!-- /.reference -->
+  <section class="slider">
+    <div class="slider-button slider-button--prev"></div>
+    <div class="slider-button slider-button--next"></div>
+    <div class="reference-slider swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class=" swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Бизнес & Финансы</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/diamond.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Самомотиватия</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/book.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Романы Теленовеллы</h3>
+            <span class="slider__description">Книги с крутыми историями</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/group.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Навыки будущего</h3>
+            <span class="slider__description">Книги для самоподготовки
+            </span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Бизнес & Финансы</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Бизнес & Финансы</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Бизнес & Финансы</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__card">
+            <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
+            <h3 class="slider__title">Бизнес & Финансы</h3>
+            <span class="slider__description">Книги про мир бизнеса</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider-book ">
+    <div class="container book swiper-container">
+      <h2 class="slider-book__title">Неизданные книги</h2>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="slider-book__image swiper-slide"><img src="/img/slider-book/ImageLogo.png" alt="image"></div>
+        <div class="slider-book__image swiper-slide"><img src="/img/slider-book/kelly.png" alt="image"></div>
+        <div class="slider-book__image swiper-slide"><img src="/img/slider-book/making.png" alt="image"></div>
+        <div class="slider-book__image swiper-slide"><img src="/img/slider-book/web.png" alt="image"></div>
+        <div class="slider-book__image swiper-slide"><img src="/img/slider-book/after.png" alt="image"></div>
+
+
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section class="history">
+    <div class="container history__grid">
+      <h2 class="history__title">История Автора</h2>
+      <p class="history__description">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю
+        писателя. Расскажем всем
+        о закулисье их книг.
+      </p>
+      <div class="history__video history__video--big">
+        <img src="/img/history/women.jpg" alt="icon: women" class="history__image history__image--big">
+        <button class="history__button history__button--big">
+          <img src="/img/history/play.svg" alt="icon: play" class="history__play">
         </button>
       </div>
-      <div class="header__bottom">
-        <div class="main">
-          <h1 class="main__title"><span class="main__title main__title--yellow">Design Theory:</span><br>
-            The Psychology of<br>
-            Graphic Design Pricing
-          </h1>
-          <span class="main__author">КНИГА МИШЕЛЯ ЯНГА</span>
-          <p class="main__description">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для
-            крупных клиентов. Теперь я делюсь своими <br>золотыми стратегиями ценообразования на творческую работу.
-          </p>
-          <div class="main__wrapper-button">
-            <button class="main__button">КУПИТЬ СЕЙЧАС</button>
-            <a class="main__link-book " href="#">ЧИТАТЬ ДЕМО</a>
-          </div>
-        </div>
-        <div class="main-book">
-          <img class="main-book__image" src="./img/header/book.jpg" alt="image: book">
-        </div>
+      <div class="history__video history__video--1">
+        <img src="/img/history/emelda.png" alt="image: emelda" class="history__image">
+        <button class="history__button">
+          <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+        </button>
+        <h3 class="video__title">Emelda Scandroot</h3>
+        <span class="video__job">Author of Books Tittle</span>
       </div>
-    </header>
-    <!-- /.header -->
-    <section class="reference">
-        <div class="reference__main">
-          <h2 class="reference__title">Рекомендации</h2>
-          <div class="reference__cards">
-            <div class="card">
-              <img src="/img/reference/world.png" alt="image: book" class="card__image">
-              <div class="card__description">
-                <h3 class="card__title">The World of
-                  Abstract Art</h3>
-                <div class="card__genre">Art & Design</div>
-                <div class="card__price">$25.00</div>
-                <div class="card__group">
-                  <button class="card__button">Купить</button>
-                  <div class="card__heart" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-                <img src="/img/reference/educated.png" alt="image: book" class="card__image">
-                <div class="card__description">
-                  <h3 class="card__title">Educated :
-                    a Memoir</h3>
-                  <div class="card__genre">Art & Design</div>
-                  <div class="card__price">$25.00</div>
-                  <div class="card__group">
-                    <button class="card__button">Купить</button>
-                    <div class="card__heart" id="heart"></div>
-                  </div>
-                </div>
-            </div>
-            <div class="card">
-                  <img src="/img/reference/flowers.png" alt="image: book" class="card__image">
-                  <div class="card__description">
-                    <h3 class="card__title">The Blue
-                      Flowers Ray…</h3>
-                    <div class="card__genre">Art & Design</div>
-                    <div class="card__price">$25.00</div>
-                    <div class="card__group">
-                      <button class="card__button">Купить</button>
-                      <div class="card__heart" id="heart"></div>
-                    </div>
-                  </div>
-            </div>
-            <div class="card">
-              <img src="/img/reference/there.png" alt="image: book" class="card__image">
-              <div class="card__description">
-                <h3 class="card__title">There There :
-                  a Novel by TO</h3>
-                <div class="card__genre">Art & Design</div>
-                <div class="card__price">$25.00</div>
-                <div class="card__group">
-                  <button class="card__button">Купить</button>
-                  <div class="card__heart" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img src="/img/reference/work.png" alt="image: book" class="card__image">
-              <div class="card__description">
-                <h3 class="card__title">WMNDFL : 
-                  The Inspiration</h3>
-                <div class="card__genre">Art & Design</div>
-                <div class="card__price">$25.00</div>
-                <div class="card__group">
-                  <button class="card__button">Купить</button>
-                  <div class="card__heart" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img src="/img/reference/making.png" alt="image: book" class="card__image">
-              <div class="card__description">
-                <h3 class="card__title">Making 
-                  Things Happen</h3>
-                <div class="card__genre">Art & Design</div>
-                <div class="card__price">$25.00</div>
-                <div class="card__group">
-                  <button class="card__button">Купить</button>
-                  <div class="card__heart" id="heart"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="reference__button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button>
-        </div>
-        <div class="reference__top">
-          <div class="reference__title">Топ Месяца</div>
-          <div class="top-wrapper">
-            <div class="card card--min">
-              <img src="/img/reference/sprint.png" alt="image: book" class="card__image card__image--min">
-              <div class="card__description card__description--min">
-                <h3 class="card__title card__title--min">Sprint : Solve,
-                  Test in 5 Days</h3>
-                <div class="card__genre card__genre--min">Art & Design</div>
-                <div class="card__price card__price--min">$25.00</div>
-                <div class="card__group card__group--min">
-                  <button class="card__button card__button--min">Купить</button>
-                  <div class="card__heart card__heart--min" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card card--min">
-              <img src="/img/reference/hacking.png" alt="image: book" class="card__image card__image--min">
-              <div class="card__description card__description--min">
-                <h3 class="card__title card__title--min">Hacking Growth
-                  Break Problem</h3>
-                <div class="card__genre card__genre--min">Art & Design</div>
-                <div class="card__price card__price--min">$25.00</div>
-                <div class="card__group card__group--min">
-                  <button class="card__button card__button--min">Купить</button>
-                  <div class="card__heart card__heart--min" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card card--min">
-              <img src="/img/reference/very.png" alt="image: book" class="card__image card__image--min">
-              <div class="card__description card__description--min">
-                <h3 class="card__title card__title--min">Very Nice a
-                  Novel by Mercy</h3>
-                <div class="card__genre card__genre--min">Art & Design</div>
-                <div class="card__price card__price--min">$25.00</div>
-                <div class="card__group card__group--min">
-                  <button class="card__button card__button--min">Купить</button>
-                  <div class="card__heart card__heart--min" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card card--min">
-              <img src="/img/reference/hooked.png" alt="image: book" class="card__image card__image--min">
-              <div class="card__description card__description--min">
-                <h3 class="card__title card__title--min">Hooked : How to
-                  Build Products</h3>
-                <div class="card__genre card__genre--min">Art & Design</div>
-                <div class="card__price card__price--min">$25.00</div>
-                <div class="card__group card__group--min">
-                  <button class="card__button card__button--min">Купить</button>
-                  <div class="card__heart card__heart--min" id="heart"></div>
-                </div>
-              </div>
-            </div>
-            <span class="top-line"></span>
-            <a class="top-link" href="#">ЛУЧШИЕ КНИГИ</a>
-          </div>
-        </div>
-    </section>
-    <!-- /.reference -->
-    <section class="slider">
-      <div class="slider-button slider-button--prev"></div>
-      <div class="slider-button slider-button--next"></div>
-      <div class="reference-slider swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class=" swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Бизнес & Финансы</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/diamond.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Самомотиватия</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/book.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Романы Теленовеллы</h3>
-                  <span class="slider__description">Книги с крутыми историями</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/group.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Навыки будущего</h3>
-                  <span class="slider__description">Книги для самоподготовки
-                  </span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Бизнес & Финансы</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>  
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Бизнес & Финансы</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Бизнес & Финансы</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>  
-              <div class="swiper-slide">
-                <div class="slider__card">
-                  <img src="/img/reference/slider/presentation.png" alt="icon" class="slider__image">
-                  <h3 class="slider__title">Бизнес & Финансы</h3>
-                  <span class="slider__description">Книги про мир бизнеса</span>
-                </div>
-              </div>   
-            </div>
+      <div class="history__video history__video--2">
+        <img src="/img/history/mar.png" alt="image: mar" class="history__image">
+        <button class="history__button">
+          <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+        </button>
+        <h3 class="history__name">Emelda Scandroot</h3>
+        <span class="history__job">Author of Books Tittle</span>
       </div>
-    </section>
-    <section class="slider-book ">
-      <div class="container book swiper-container">
-        <h2 class="slider-book__title">Неизданные книги</h2>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/ImageLogo.png" alt="image" ></div>
-          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/kelly.png" alt="image" ></div>
-          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/making.png" alt="image" ></div>
-          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/web.png" alt="image" ></div>
-          <div class="slider-book__image swiper-slide"><img src="/img/slider-book/after.png" alt="image" ></div>
+      <div class="history__video history__video--3">
+        <img src="/img/history/nembo.png" alt="image: nembo" class="history__image">
+        <button class="history__button">
+          <img src="/img/history/play.svg" alt="icon: play" class="history__play">
+        </button>
+        <h3 class="history__name">Emelda Scandroot</h3>
+        <span class="history__job">Author of Books Tittle</span>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="partners__content">
+        <h3 class="partners__title">Некоторые из издателей, с которыми мы сотрудничали
+        </h3>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img src="/img/publishers/slack.svg" alt="image: slack" class="partners__name partners__name--s">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/netflix.svg" alt="image: slack" class="partners__name partners__name--n">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/fitbit.svg" alt="image: slack" class="partners__name partners__name--f">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/google.svg" alt="image: slack" class="partners__name partners__name--g">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/airbnb.svg" alt="image: slack" class="partners__name partners__name--a">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/uber.svg" alt="image: slack" class="partners__name partners__name--u">
+          </li>
+        </ul>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img src="/img/publishers/netflix.svg" alt="image: netflix" class="partners__name partners__name--n">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/airbnb.svg" alt="image: slack" class="partners__name partners__name--a">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/slack.svg" alt="image: slack" class="partners__name partners__name--s">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/uber.svg" alt="image: slack" class="partners__name partners__name--u">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/fitbit.svg" alt="image: slack" class="partners__name partners__name--f">
+          </li>
+          <li class="partners__item">
+            <img src="/img/publishers/google.svg" alt="image: slack" class="partners__name partners__name--g">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="blog container">
+    <div class="blog__wrapper">
+      <h2 class="blog__title">Ehya Блог</h2>
+      <button class="blog__button">Все Блоги</button>
+    </div>
+    <div class="blog__articles">
+      <div class="blog__left">
+        <article class="article">
+          <a href="#">
+            <img src="/img/blog/shape.jpg" alt="image: shape" class="article__image">
+          </a>
+          <span class="article__subtitle">Success Steps For Your Business Life</span>
+          <p class="article__description">This is the author story section. Every week we try to give you the story of
+            book writer. Tell all of you the behind the
+            scene of their books.</p>
+        </article>
+      </div>
+      <div class="blog__rigth">
+        <article class="acticle article--min">
+          <a href="#">
+            <img src="/img/blog/build.png" alt="image: build" class="article__image article__image--min">
+          </a>
+          <div class="content">
+            <time class="content__date">23 марта 2020</time>
+            <span class="content__subtitle">29 Motivational Quotes
+              for Work Environments</span>
+            <a class="content__link" href="#">читать</a>
+          </div>
+        </article>
+        <article class="acticle article--min">
+          <a href="#">
+            <img src="/img/blog/learn.png" alt="image: learn" class="article__image article__image--min">
+          </a>
+          <div class="content">
+            <time class="content__date">23 марта 2020</time>
+            <span class="content__subtitle">Learn To Love Growth
+              and You Will Be A Success</span>
+            <a class="content__link" href="#">читать</a>
+          </div>
+        </article>
+        <article class="acticle article--min">
+          <a href="#">
+            <img src="/img/blog/quotes.png" alt="image: quetes" class="article__image article__image--min">
+          </a>
+          <div class="content">
+            <time class="content__date">23 марта 2020</time>
+            <span class="content__subtitle">Motivation How To Build
+              Trust at your Work</span>
+            <a class="content__link" href="#">читать</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="sibscribe container">
+    <h2 class="sibscribe__title">Будь первым, кто узнает о наших акциях</h2>
+    <form class="sibscribe__wrapper">
+      <input class="sibscribe__input" placeholder="Ваш Emaill" type="email">
+      <button class="sibscribe__button" type="submit">Регистрация</button>
+    </form>
+  </section>
+  <footer class="footer container">
+    <div class="footer__left">
+      <img src="/img/header/logo.png" alt="logo" class="footer__logo">
+      <p class="footer__ad">Создайте современный и креативный веб-сайт с crealand</p>
+      <div class="footer__social">
+        <a href="#" class="footer__link footer__link--c footer__link--g">
+          <img src="img/footer/g.svg" alt="icon: google" class="footer__image">
+        </a>
+        <a href="#" class="footer__link footer__link--c footer__link--tw">
+          <img src="img/footer/twit.svg" alt="icon: twitter" class="footer__image">
+        </a>
+        <a href="#" class="footer__link footer__link--c footer__link--ins">
+          <img src="img/footer/inst.svg" alt="icon: inst" class="footer__image">
+        </a><a href="#" class="footer__link footer__link--c ">
+          <img src="img/footer/in.svg" alt="icon: in" class="footer__image">
+        </a>
+      </div>
+    </div>
+    <div class="footer__column footer__column--1">
+      <h3 class="footer__subtitle">Сервисы</h3>
+      <ul class="footer___list">
+        <li class="footer__item"><a class="footer__link" href="#">Документация</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Дизайн</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Темы</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Илюстрации</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">UI Kit</a></li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--2">
+      <h3 class="footer__subtitle">Продукт</h3>
+      <ul class="footer___list">
+        <li class="footer__item"><a class="footer__link" href="#">Лэндинг</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Функции</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Документация</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Скидки</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Расценки</a></li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--3">
+      <h3 class="footer__subtitle">Компания</h3>
+      <ul class="footer___list">
+        <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Условия</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--4">
+      <h3 class="footer__subtitle">Еще..</h3>
+      <ul class="footer___list">
+        <li class="footer__item"><a class="footer__link" href="#">Документация</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Лицензия</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Изменения</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="copyright__icon"></div>
+      <a class="copyright__link" href="#">
+        <span class="copyright__text">Copyright © 2019. Crafted with love.</span>
+      </a>
+    </div>
 
-          
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <section class="history">
-      <div class="container history__grid">
-          <h2 class="history__title">История Автора</h2>
-          <p class="history__description">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем 
-            о закулисье их книг.
-          </p>
-          <div class="history__video history__video--big">
-            <img src="/img/history/women.jpg" alt="icon: women" class="history__image history__image--big">
-            <button class="history__button history__button--big">
-              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
-            </button>
-          </div>
-          <div class="history__video history__video--1">
-            <img src="/img/history/emelda.png" alt="image: emelda" class="history__image">
-            <button class="history__button">
-              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
-            </button>
-            <h3 class="video__title">Emelda Scandroot</h3>
-            <span class="video__job">Author of Books Tittle</span>
-          </div>
-          <div class="history__video history__video--2">
-            <img src="/img/history/mar.png" alt="image: mar" class="history__image">
-            <button class="history__button">
-              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
-            </button>
-            <h3 class="history__name">Emelda Scandroot</h3>
-            <span class="history__job">Author of Books Tittle</span>
-          </div>
-          <div class="history__video history__video--3">
-            <img src="/img/history/nembo.png" alt="image: nembo" class="history__image">
-            <button class="history__button">
-              <img src="/img/history/play.svg" alt="icon: play" class="history__play">
-            </button>
-            <h3 class="history__name">Emelda Scandroot</h3>
-            <span class="history__job">Author of Books Tittle</span>
-          </div>
-        </div>
-      </div>    
-    </section>
-    <section class="publishers">
-    </section>
-    <section class="ehya-blog">
-    </section>
-    <section class="sibscribe">
 
-    </section>
-    <footer class="footer">
-    </footer>
+  </footer>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

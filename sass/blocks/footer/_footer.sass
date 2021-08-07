@@ -1,0 +1,95 @@
+.footer
+  padding: 108px 0 100px 0
+
+  display: grid
+  grid-template-areas: "left a b c d" "cop cop cop cop cop"
+  grid-template-rows: 200px 150px
+  grid-template-columns: 273px 164px 260px 238px 1fr
+  height: 668px
+  &__left
+    grid-area: left
+    display: flex
+    flex-direction: column
+    align-items: start
+  &__logo
+    width: 90px
+    height: 25px
+    margin-bottom: 28px
+  &__ad
+    margin-bottom: 32px
+    width: 263px
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 28px
+    color: #5A7184
+  &__social
+    display: flex
+  &__link
+    text-decoration: none
+    &--g
+      margin-right: 6px
+    &--tw
+      margin-right: 7px
+    &--ins
+      margin-right: 8px
+    &--c
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 40px
+      height: 40px
+      background-color: rgba(90, 113, 132, .1)
+      border-radius: 2000px
+  &__image
+    width: 16px
+    height: 18px
+  &__column
+    margin-left: 30px
+    &--1
+      grid-area: a
+    &--2
+      grid-area: b
+    &--3
+      grid-area: c
+    &--4
+      grid-area: d
+  &__subtitle
+    margin-bottom: 31px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: #183B56
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    margin-bottom: 24px
+    list-style-type: none
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+.copyright
+  grid-area: cop
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__icon
+    margin-top: 96px
+    margin-bottom: 24px
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background: #1576D8 url("../img/footer/heart.svg") no-repeat center center
+  &__link
+
+  &__text
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #5A7184
