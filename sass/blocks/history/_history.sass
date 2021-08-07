@@ -1,47 +1,56 @@
 .history
-  padding: 104px 0 100px 0
-  &__grid
-    display: grid
-    grid-template-areas: "a b b" "f f f" "c d e"
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 315px 315px 315px;
-    grid-gap: 10px;
-    height: 100vh;
+  padding: 105px 67px 100px 68px
+  display: grid
+  grid-template-areas: "a a b" "f f f" "c d e"
+  grid-template-rows: 148px 1fr 285px
+  grid-template-columns: 345px 315px 1fr
   &__title
     grid-area: a
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
-    color: #183B56;
-    letter-spacing: 0.2px;
-  &__descrition
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: #183B56
+    letter-spacing: 0.2px
+  &__description
+    padding-right: 30px
+    margin-left: -73px
     grid-area: b
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    color: #5A7184;
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: #5A7184
+  &__wrapper
+    position: relative
+    height: 200px
+    width: 315px
   &__video
+
     &--big
+      height: 380px
+      position: relative
       grid-area: f
+      margin-bottom: 30px
     &--1
       grid-area: c
+      margin-right: 30px
     &--2
       grid-area: d
     &--3
+      margin-left: 30px
       grid-area: e
   &__image
-    position: relative
-    width: 325px
+    width: 315px
     height: 200px
     &--big
       width: 1005px
       height: 380px
   &__button
     position: absolute
-    z-index: 30
+    background: transparent
+    border: none
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
@@ -50,19 +59,30 @@
       height: 100px
       border-radius: 50%
       background: white
-  &__name  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0.2px;
-    color: #183B56;
+      cursor: pointer
+  &__play
+    position: relative
+    top: 1px
+    left: 1px
+    align-self: center
+    width: 30px
+    height: 35px
+    cursor: pointer
+  &__name
+    display: block
+    margin-top: 22px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
   &__job
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #5A7184;
-
-
+    display: block
+    margin-top: 9px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184

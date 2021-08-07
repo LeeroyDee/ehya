@@ -1,77 +1,139 @@
 .reference
-  margin-top: 100px
- 
-  padding-bottom: 79px
-  border-bottom: 1px solid #ECEEF2
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-between
+  &__wrapper
+    justify-content: space-between
+    margin-top: 100px
+    padding-bottom: 79px
+    border-bottom: 1px solid #ECEEF2
+    display: flex
+    flex-wrap: nowrap
   &-slider
-    height: 265px
+    position: relative
+    height: 240px
     width: 100%
     margin-top: 60px
     margin-bottom: 100px
   &__title
-    font-family: Roboto Condensed;
-    font-style: normal;
+    font-family: Roboto Condensed
+    font-style: normal
     font-weight: 700
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0.2px;
-    color: #183B56;
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: #183B56
   &__cards
     padding: 30px 0 27px 0
     width: 751px
     display: grid
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 1fr 1fr 
-    gap: 32px 32px
+    grid-template-rows: 1fr 1fr 1fr
+    gap: 32px 30px
   &__button
     width: 751px
     height: 72px
     background: rgba(21, 101, 216,.1)
-    mix-blend-mode: normal;
-    border-radius: 8px;
-    font-family: Roboto Condensed;
-    font-style: normal;
+    mix-blend-mode: normal
+    border-radius: 8px
+    font-family: Roboto Condensed
+    font-style: normal
     font-weight: 700
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #1565D8;
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #1565D8
     cursor: pointer
+  &-button
+    position: absolute
+    width: 56px
+    height: 56px
+    background: #FFFFFF
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+    border-radius: 2000px
+    top: 50%
+    transform: translate(-50%,-50%)
+    background-repeat: no-repeat
+    background-position: center center
+    cursor: pointer
+    &--next
+      left: 0
+      background-image: url(../img/reference/slider/left.svg)
+      z-index: 90
+    &--prev
+      transform: translate(50%, -50%)
+      right: 0
+      background-image: url(../img/reference/slider/rigth.svg)
+      z-index: 90
+    &--disabled
+      opacity: .2
+      cursor: auto
+.slider
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+    padding: 40px 0 30px 0
+    width: 265px
+    height: 240px
+    border: 1px solid #ECEEF2
+    box-sizing: border-box
+    border-radius: 8px
+  &__image
+    width: 64px
+    height: 64px
+    background: #E6F0FC
+    border-radius: 50%
+  &__title
+    margin-top: 40px
+    font-style: normal
+    font-family: Roboto
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
+  &__description
+    margin-top: 12px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #5A7184
+
 .top
   &-wrapper
-    padding-top: 24px
+    padding-top: 23px
     height: 942px
     margin-top: 30px
     display: flex
     flex-direction: column
     align-items: center
     width: 360px
-    background: rgba(179, 186, 197, 0.1);
-    mix-blend-mode: normal;
-    border-radius: 8px;
+    background: rgba(179, 186, 197, 0.1)
+    mix-blend-mode: normal
+    border-radius: 8px
   &-line
+    margin-top: -10px
     display: flex
     justify-content: center
     width: 312px
     height: 1px
-    border: 1px solid #ECEEF2;
+    border: 1px solid #ECEEF2
   &-link
     justify-content: center
     display: flex
     margin-top: 25px
     margin-bottom: 25px
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #1565D8;
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #1565D8
     text-decoration: none
     text-align: center
 
@@ -81,79 +143,92 @@
   width: 358px
   height: 260px
   padding: 11px
-  border: 1px solid #ECEEF2;
-  border-radius: 8px;
+  border: 1px solid #ECEEF2
+  border-radius: 8px
   &--min
     width: 100%
     height: 180px
     border: none
     border-radius: 0
     padding: 0
-    margin-bottom: 30px
+    margin-bottom: 34px
   &__image
     width: 160px
     height: 240px
-    margin-right: 20px
-    background: #B3BAC5;
-    mix-blend-mode: normal;
-    border-radius: 8px;
+    margin-right: 26px
+    background: #B3BAC5
+    mix-blend-mode: normal
+    border-radius: 8px
     &--min
       width: 120px
       height: 180px
-      margin-left: 26px
+      margin-left: 24px
   &__description
+    height: 240px
+    margin-left: -6px
+    padding-top: 4px
     display: flex
     flex-direction: column
+    &--min
+      height: 180px
+      padding: 0
+      margin: 0
+
   &__title
-    margin-top: 13px
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0.2px;
-    color: #183B56;
+    margin-top: 11px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
+    &--min
+      margin-top: 11px
   &__genre
     margin-top: 16px
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #183B56;
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
     &--min
       display: none
   &__price
     margin-top: 24px
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.2px;  
-    color: #1565D8;
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: #1565D8
     &--min
-      margin-top: 15px
+      margin-top: 14px
   &__group
     display: flex
+    justify-content: space-between
     align-items: center
     margin-top: 24px
+    width: 146px
     &--min
-      margin-top: 29px
+      margin-top: 21px
   &__button
     display: flex
     width: 101px
     height: 38px
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #FFFFFF
     padding: 7px 20px 7px 20px
-    background: #183B56;
-    border-radius: 2000px;
+    background: #183B56
+    border-radius: 2000px
     border: none
-
+    cursor: pointer
+    transition: 0.5s all
   &__heart
     display: flex
     margin-left: 22px
@@ -161,6 +236,10 @@
     height: 21px
     background-image: url(../img/reference/slider/heart.svg)
     background-repeat: no-repeat
-    cursor: pointer  
+    cursor: pointer
     &--min
       display: none
+.heart
+  fill: #959EAD
+.like
+  fill: red
