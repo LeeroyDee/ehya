@@ -7,7 +7,7 @@ function open() {
 }
 ///лайки
 let iconClick = document.querySelectorAll(".heart");
-console.log(iconClick);
+
 for (let i = 0; i < iconClick.length; i++) {
   iconClick[i].addEventListener("click", function name(e) {
     iconClick[i].classList.toggle("like");
@@ -45,25 +45,25 @@ const sliderBook = new Swiper(".books", {
   },
 });
 //video
-var tag = document.createElement('script');
+var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
-let video=["M7lc1UVf-VE","9xFYc3KCbHw","RcBGYODF5Ks","LuWf-Yx1azQ"]
-let button=document.querySelectorAll(".history__button")
+let video = ["M7lc1UVf-VE", "9xFYc3KCbHw", "RcBGYODF5Ks", "LuWf-Yx1azQ"];
+let button = document.querySelectorAll(".history__button");
 for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener("click",function onYouTubeIframeAPIReady() {
-  player = new YT.Player("player"+i, {
-    height: '100%',
-    width: '100%',
-    videoId: video[i],
-    events: {
-      'onReady': onPlayerReady,
-    }
+  button[i].addEventListener("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player" + i, {
+      height: "100%",
+      width: "100%",
+      videoId: video[i],
+      events: {
+        onReady: onPlayerReady,
+      },
+    });
   });
 }
-)}
 function onPlayerReady(event) {
   event.target.playVideo();
 }
@@ -103,25 +103,25 @@ var e = $("[data-toggle=modal]");
 var c = $(".modal__close");
 e.on("click", b);
 c.on("click", d);
-$(document).keyup(function(g) {
-    if (g.key === "Escape" || g.keyCode === 27) {
-        d(g)
-    }
+$(document).keyup(function (g) {
+  if (g.key === "Escape" || g.keyCode === 27) {
+    d(g);
+  }
 });
 
 function b() {
-    var g = $(".modal__overlay");
-    var h = $(".modal__dialog");
-    g.addClass("modal__overlay--visible");
-    h.addClass("modal__dialog--visible")
+  var g = $(".modal__overlay");
+  var h = $(".modal__dialog");
+  g.addClass("modal__overlay--visible");
+  h.addClass("modal__dialog--visible");
 }
 
 function d(i) {
-    i.preventDefault();
-    var g = $(".modal__overlay");
-    var h = $(".modal__dialog");
-    g.removeClass("modal__overlay--visible");
-    h.removeClass("modal__dialog--visible")
+  i.preventDefault();
+  var g = $(".modal__overlay");
+  var h = $(".modal__dialog");
+  g.removeClass("modal__overlay--visible");
+  h.removeClass("modal__dialog--visible");
 }
 //валидатор
 $("form").each(function () {
