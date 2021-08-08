@@ -1,12 +1,12 @@
 .subscribe
   overflow: hidden
   position: relative
-  padding: 60px 63px 80px 60px
+  padding: 60px 63px 58px 60px
   height: 236px
   background: #1565D8
   border-radius: 12px
   display: flex
-  align-items: flex-end
+  align-items: flex-start
   justify-content: space-between
   &::before
     content: ""
@@ -49,8 +49,13 @@
     letter-spacing: 0.2px
     color: #FFFFFF
   &__wrapper
+    margin-top: 30px
     position: relative
     margin-bottom: 10px
+  &__group
+
+    display: flex
+    flex-direction: column
   &__button
     position: absolute
     top: 4px

@@ -431,6 +431,7 @@ img {
 textarea:focus, input:focus {
   color: black;
   font-weight: bold;
+  outline: 0;
 }
 
 .thankyou {
@@ -1696,16 +1697,16 @@ textarea:focus, input:focus {
 .subscribe {
   overflow: hidden;
   position: relative;
-  padding: 60px 63px 80px 60px;
+  padding: 60px 63px 58px 60px;
   height: 236px;
   background: #1565D8;
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1763,8 +1764,19 @@ textarea:focus, input:focus {
 }
 
 .subscribe__wrapper {
+  margin-top: 30px;
   position: relative;
   margin-bottom: 10px;
+}
+
+.subscribe__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .subscribe__button {
