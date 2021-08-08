@@ -14,3 +14,23 @@
       &:hover
         color: red
         text-decoration: underline
+
+@media (max-width: 1300px)
+  .footer
+    padding: 48px 0 64px 0
+    grid-template-areas: "left left left left" "b a c d" "cop cop cop cop"
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    &__left
+      flex-direction: row
+      justify-content: space-between
+@media (max-width: 767px)
+  .copyright
+    display: none
+  .footer
+    padding: 48px 0 64px 0
+    grid-template-areas: "b a" "c d" "left left"
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    &__left
+      align-items: center

@@ -16,11 +16,36 @@ for (let i = 0; i < iconClick.length; i++) {
 
 //////////////////////////////////////////////////////
 const swiper = new Swiper(".slider", {
-  slidesPerView: 4,
   watchOverflow: true,
   spaceBetween: 26,
   direction: "horizontal",
   loop: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 27,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1192: {
+      slidesPerView: 3,
+      spaceBetween: 26,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 26,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 26,
+    },
+  },
 
   // Navigation arrows
   navigation: {
@@ -31,11 +56,33 @@ const swiper = new Swiper(".slider", {
 });
 
 const sliderBook = new Swiper(".books", {
-  slidesPerView: 5,
   watchOverflow: true,
   spaceBetween: 27,
   direction: "horizontal",
   loop: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 27,
+    },
+
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 27,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 27,
+    },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 27,
+    },
+  },
 
   // Navigation arrows
   navigation: {
