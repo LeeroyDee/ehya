@@ -1,4 +1,6 @@
 .subscribe
+  overflow: hidden
+  position: relative
   padding: 60px 63px 80px 60px
   height: 236px
   background: #1565D8
@@ -6,6 +8,42 @@
   display: flex
   align-items: flex-end
   justify-content: space-between
+  &::before
+    content: ""
+    position: absolute;
+    height: 1186px;
+    width: 1186px;
+    left: 1670px;
+    top: -60px;
+    border-radius: 50%;
+    left: 42%;
+    top: -14%;
+
+
+    background: linear-gradient(270deg, #FFFFFF 28.21%, rgba(255, 255, 255, 0.0001) 99.73%);
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    transform: rotate(90deg);
+  &::after
+    position: absolute
+    content: ""
+    height: 786px;
+    width: 786px;
+    left: 52%;
+    top: 62%;
+    border-radius: 50%;
+    background: #1565D8
+
+  &__oval
+    position: absolute
+    left: -48.77%;
+    right: 44.74%;
+    top: -415.25%;
+    bottom: 12.71%
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 99.73%);
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border-radius: 50%
   &__title
     width: 393px
     font-family: Roboto Condensed
