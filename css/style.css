@@ -478,6 +478,37 @@ textarea:focus, input:focus {
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/reference/slider/left.svg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center center;
+  background-color: #65b1b1;
+  border-radius: 50%;
+  text-decoration: none;
+  border: 1px solid black;
+  z-index: 140;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .7s all;
+  transition: .7s all;
+}
+
+.up:hover {
+  background-color: #e0742c;
+}
+
 .header {
   position: relative;
   padding-top: 11px;
@@ -1395,6 +1426,7 @@ textarea:focus, input:focus {
 }
 
 .history__name {
+  position: relative;
   display: block;
   margin-top: 22px;
   font-family: Roboto;
@@ -1414,6 +1446,21 @@ textarea:focus, input:focus {
   font-size: 16px;
   line-height: 22px;
   color: #5A7184;
+}
+
+.history__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.history__svg {
+  margin-top: 29px;
+  fill: #1565D8;
+  cursor: pointer;
 }
 
 .partners {
@@ -2351,6 +2398,14 @@ textarea:focus, input:focus {
 @media (max-width: 767px) {
   .container {
     max-width: 88%;
+  }
+}
+
+@media (min-width: 992px) {
+  .up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
