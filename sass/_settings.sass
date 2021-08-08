@@ -5,12 +5,18 @@ ul,li,h1,h2,h3,p,span,button
   padding: 0
 body
   //background-color: #E5E5E5
-  font-family: 'Open sans', sans-serif
+  font-family: 'Open Sans', sans-serif
   //font-family: 'Roboto Condensed', sans-serif;
 .container
   //overflow: hidden
   max-width: 1140px
   margin: 0 auto
+  &--header
+    display: flex
+    height: 100px
+    align-items: center
+    justify-content: space-between
+    z-index: 120
 .flex
   display: flex
   flex-wrap: nowrap
@@ -35,7 +41,7 @@ img
 .button
   min-width: 160px
   min-height: 49px
-  padding: 0 18px  
+  padding: 0 18px
   font-style: normal
   font-weight: bold
   font-size: 12px
@@ -50,9 +56,6 @@ img
   z-index: inherit
   color: red
 
-
 textarea:focus, input:focus
   color: black
   font-weight: bold
-  
-  
