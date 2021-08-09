@@ -7,11 +7,23 @@
 
 @media (max-width: 1300px)
   .history
+    justify-items: center
     padding: 105px 0px 100px 0px
     display: grid
-    grid-template-areas: "a b" "f f " "c d "
-    grid-template-rows: 148px 1fr 285px
-    grid-template-columns: 1frpx 1frpx 1fr
+    grid-template-areas: "a a" "b b" "f f " "c d "
+    grid-template-rows: 80px 120px 1fr 302px
+    grid-template-columns: 1fr 1fr
+    &__title
+      display: flex
+      width: 100%
+      justify-content: center
+    &__description
+      padding: 0
+      margin: 0
+      display: flex
+      width: 70%
+      
+      
     &__image
       &--big
         width: 100%
@@ -25,7 +37,7 @@
     grid-template-areas: "a a" "b b" "f f" "c d"
     grid-template-rows: 1fr 1fr 1fr 1fr
     grid-template-columns: 1fr 1fr
-
+    
     &__group
       flex-direction: column
       align-items: center
