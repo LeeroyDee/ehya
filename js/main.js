@@ -66,17 +66,17 @@ const sliderBook = new Swiper(".books", {
       spaceBetween: 8,
     },
     800: {
-      slidesPerView: 2,
-      spaceBetween: 27,
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
 
     991: {
-      slidesPerView: 3,
-      spaceBetween: 27,
+      slidesPerView: "auto",
+      //spaceBetween: 30,
     },
     1300: {
-      slidesPerView: 4,
-      spaceBetween: 27,
+      slidesPerView: "auto",
+      //spaceBetween: 40,
     },
     1400: {
       slidesPerView: 5,
